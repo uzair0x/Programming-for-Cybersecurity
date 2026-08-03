@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Document</title>
+</head>
+<body>
+    <script>
+        let alertThreshold = 5;  // more than 5 attempts, we mark it as risk
+        let attempts = Number(prompt("How many failed login attempts detected", 0)); // ask user for input, convert into number
+        let riskScore;
+
+        if (attempts > alertThreshold) {
+            riskScore = attempts * 10; // each extra attempt adds 10 points to the risk
+            alert(`⚠️ Suspicious activity! Risk score: ${riskScore}`); // warning 
+        }
+        console.log("Final risk score", riskScore);
+    </script>
+</body>
+</html>
