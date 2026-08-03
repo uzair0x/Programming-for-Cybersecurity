@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userTrustScore = 23 ;   // how trusted the user is, 0-100
+        let isFlagged = false;      // was this account previously flagged
+        let reputationPoints = 703; // points earned from clean activity history
+        let riskLevel = 299         // current risk score of this  session 
+        let requiredVerificationScore = 9.99; // extra verification required  "cost " (like extra 2FA steps needed)
+
+        ///////////////////////
+
+        if (userTrustScore > 21) {
+            // skip extra verification steps 
+            if (riskLevel >=300 || reputationPoints >= 500) {
+                requiredVerification = 0;
+            }
+        }
+
+        alert("requiredVerificationScore");
+    </script>
+</body>
+</html>
