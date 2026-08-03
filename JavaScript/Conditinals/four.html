@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let riskScore = Number(prompt("Enter the detected risk score", 0));
+
+            if (riskScore < 10) {
+                alert("✅ Low risk  normal activity");
+            } else if (riskScore < 30) {
+                alert("🟡 Mild risk — monitor activity");
+            } else if (riskScore < 60) {
+                alert("🟠 Moderate risk  review account activity");
+            } else if (riskScore < 90) {
+                alert("🔴 High risk  flag for manual review");
+            } else if (riskScore < 100) {
+                alert("🚨 Critical risk  near lockout threshold");
+            } else if (riskScore == 100) {
+                alert("⛔ Maximum risk  account locked");
+            } else {
+                alert("‼️ Risk score exceeded limit  possible attack pattern");
+            }
+    </script>
+    
+</body>
+</html>
