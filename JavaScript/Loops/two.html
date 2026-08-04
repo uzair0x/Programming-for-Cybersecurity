@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+</head>
+<body>
+    <script>
+        let correctPassword = "Secure@123";
+        let enteredPasssword;
+        let attemptCount = 0;
+        const MAX_ATTEMPTS = 3;
+
+        do {
+            enteredPasssword = prompt("Enter you password:");
+            attemptCount = attemptCount + 1;
+
+            if (enteredPasssword == correctPassword){
+                alert("  Access granted");
+                break;
+            } else {
+                alert(` Incorrect password. Attempt ${attemptCount} of ${MAX_ATTEMPTS}`);
+            }
+        } while (enteredPasssword !== correctPassword && attemptCount < MAX_ATTEMPTS);
+
+        if (enteredPasssword !== correctPassword) {
+            alert(" Account locked - too many failed attempts");
+        }
+    </script>
+    
+</body>
+</html>
