@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan Loop</title>
+</head>
+<body>
+    <script>
+        let scanFinished = false; // scan abhi khatam nahi hua
+        let attemptNumber = 1;    // ye pehla attempt hai
+
+        while (scanFinished != true) {
+            // user se pucho: aur scan karna hai?
+            let continueScanning = confirm(`Attempt ${attemptNumber}: Scan another target?`);
+
+            if (continueScanning === true) {
+                scanFinished = false; // OK dabaya -> loop chalta rahega
+            } else {
+                scanFinished = true;  // Cancel dabaya -> loop ruk jayega
+            }
+
+            attemptNumber = attemptNumber + 1; // counter badhao
+        }
+
+        console.log(`Scan stopped after ${attemptNumber - 1} attempts`); // final result
+    </script>
+</body>
+</htmlxd
