@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sleectedPort = prompt("Choose port to scan : 22 , 88 and 443");
+        let vulnerabilityFound = false;
+
+        switch(selectedPort) {
+            case "22":
+                alert("Port 22 is open and vulnerable to SSH brute force attacks.");
+                break;
+            
+            case "88":
+                aalert("Port 88 open: Kerberos service  possible AD environment, check for Kerberoasting risk");
+                break;
+            
+            case "443":
+                alert("Port 443 open: HTTPS service  check SSL certificate validity and cipher strength");
+                break;
+
+            default:
+                alert("Port not recongnized :" + String(selectedPort));
+
+                
+        }
+
+        if (vulnerabilityFound) {
+            alert("Service detected investigate further befor reporting");
+        }
+    </script>
+    
+</body>
+</html>
