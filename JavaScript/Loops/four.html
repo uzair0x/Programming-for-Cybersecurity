@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Target IP Scanner</title>
+</head>
+<body>
+    <script>
+        let targetIps = [];
+        let isDone = false;
+
+        while (!isDone) {
+            let ip = prompt("Enter a target IP to scan (or press Cancel to finish)");
+
+            if (ip != null) {
+                targetIps.push(ip);
+            } else {
+                isDone = true;
+            }
+        }
+
+        console.log("==== Target IP List ==== ");
+        for (let i = 0; i < targetIps.length; i++) {
+            console.log(targetIps[i]);
+        }
+
+        console.log(" Total target IPs: " + targetIps.length);
+    </script>
+</body>
+</html>
