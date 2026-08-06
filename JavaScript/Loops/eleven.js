@@ -28,7 +28,7 @@ while (true) {
     }
 
     if (result === "") {
-        alert("No contact found for: " + search);
+        alert("No contacte found for: " + search);
     } else {
         alert(result);
     }
