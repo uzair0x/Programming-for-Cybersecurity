@@ -27,6 +27,7 @@ Bash and Python covering recon, automation, and bug bounty workflows.
 ## 👨‍💻 Author
 
 **Uzair** Security Researcher   
+🎓 CEH & CRTA Certified
 🏆 Top 2% on TryHackMe  
 🔗 [GitHub](https://github.com/Uzair0x) | [LinkedIn](https://linkedin.com/in/muhammad-uzairkhan-/) 
 
